@@ -1,0 +1,9 @@
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.input :category %>
+  <%= f.submit %>
+<% end %>
+
+<button type="button" class="btn btn-primary mt-4"><%= link_to "Back to all restaurants", restaurants_path, class: "text-decoration-none text-dark" %></button>

@@ -1,0 +1,7 @@
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :rating %>
+  <%= f.input :content %>
+  <%= f.submit "Submit review", class: "btn btn-primary"%>
+<% end %>
+
+<button type="button" class="btn btn-outline-primary mt-4"><%= link_to "Back to all restaurants", restaurants_path, class: "text-decoration-none text-dark" %></button>
